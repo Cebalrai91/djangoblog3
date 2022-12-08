@@ -8,6 +8,19 @@ def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
     return render(request, 'blog/post_list.html', {'posts': posts})
 
+def zjawiska(request):
+    posts = Post.objects.filter(kategoria='3').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+def mgławice(request):
+    posts = Post.objects.filter(kategoria='2').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+def planety(request):
+    posts = Post.objects.filter(kategoria='1').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+def nowe(request):
+    posts = Post.objects.filter(rok='2022').order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})

@@ -21,6 +21,11 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+    path('zjawiska/', include('blog.urls')),
+    path('mglawice/', include('blog.urls')),
+    path('planety/', include('blog.urls')),
+    path('nowe/', include('blog.urls')),
+
 
 ]
 handler404 = 'blog.views.error_404_view'
