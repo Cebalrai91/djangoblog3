@@ -1,8 +1,16 @@
 {% load static %}
 <html lang="pl">
         <head>
+             <style>
+                body {
+                  background-image: url('/media/images/teleskop.jpg');
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-size: cover;
+                }
+             </style>
             <meta charset="UTF-8">
-            <title>Blog dla programistów</title>
+            <title>Adam Tomaszewski - astrofotografia</title>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
             <script src="https://use.fontawesome.com/451851369b.js"></script>
@@ -23,17 +31,19 @@
     <div class="all">
 <nav class="navbar navbar-light bg-light">
       <div class="page-header">
-          <img src="/media/images/logo.png" height="5%">
+          <img src="/media/images/kometa.jpg" height="5%">
         <a class="nav-link" href="/"><b>Strona główna</b></a>
-        <a class="nav-link" href="#"><b>Najnowsze artykuły</b></a>
-        <a class="nav-link" href="#"><b>Pisz dla nas</b></a>
-        <a class="nav-link" href="#"><b>Kontakt</b></a>
+        <a class="nav-link" href="#"><b>Zjawiska astronomiczne</b></a>
+        <a class="nav-link" href="#"><b>Obiekty mgławicowe</b></a>
+        <a class="nav-link" href="#"><b>Planety</b></a>
+        <a class="nav-link" href="#"><b>2022</b></a>
       </div>
     <div class="gora">
-    <p class="title"><b>Blog dla programisty</b></p>
-    <img class="baner" src="/media/images/baner.jpg"><br/><br/><br/>
+    <p class="title"><b>Adam Tomaszewski - strona o astrofotografii</b></p>
+
 </div>
 </nav>
+
 <div class="content container">
     <div class="row">
         <div class="col-md-8">
