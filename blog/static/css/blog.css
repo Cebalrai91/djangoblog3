@@ -19,7 +19,7 @@ margin-right: 55px;
   width:70%;
   border-bottom: solid;
   border-width: 1px;
-  border-color:#f0f0f0;
+  border-color:#ffffff;
 }
 
 .baner{
@@ -102,6 +102,7 @@ h2{
 }
 .title{
     font-size: 45px;
+    color: #C25100;
 }
 
 .stopka{
